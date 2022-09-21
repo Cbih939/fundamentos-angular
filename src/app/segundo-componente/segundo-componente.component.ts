@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivationStart } from '@angular/router';
 
 @Component({
   selector: 'app-segundo-componente',
@@ -8,4 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class SegundoComponenteComponent {
   nome = "Cbimoh Athayde";
   dataNascimento = "1989-09-06";
+  urlImagem = "/assets/avatar.jpg";
+
+  mostrarDataNascimento(){
+    alert(`A data de nascimento de Cbimoh é: ${this.dataNascimento}`);
+  }
 }
